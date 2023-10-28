@@ -12,7 +12,7 @@
 extern "C" JNIEXPORT
 jstring JNICALL Java_com_example_dcmtkdemo_MainActivity_stringFromJNI(JNIEnv* env, jobject /* this */) {
     DcmFileFormat readFileFormat;
-    OFCondition status = readFileFormat.loadFile("/sdcard/ileitis_in_yersiniosis_42_0001.dic");
+    OFCondition status = readFileFormat.loadFile("/sdcard/4dicom/test1.dcm");
     std::string hello = "Hello from C++";
     LOGI("open file result: %s", status.text());
     if (status.good()) {
